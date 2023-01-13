@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+            <section class="menu-section>" id="menu-section"></section>
+            <section id="order-section">
+                <h3 class="user-order-title hidden-order">Your Order</h3>
+                <div class="single-order" id="single-order">
+                </div>
+                <hr class="order-line hidden-order">
+                </hr>
+                <div id="total-price"></div>
+                <button id="complete-btn" class="hidden-order">Complete order</button>
+            </section>
+            <section class="modal hidden">
+                <h3>Enter card details</h3>
+                <form id="card-form">
+                    <input type="text" class="name-input form-cleaner" id="name" placeholder="Enter your name" required>
+                    <input type="number" class="form-cleaner" placeholder="Enter card number" required>
+                    <input type="number" class="form-cleaner" placeholder="Enter CVV" required>
+                    <button class="pay-btn" id="pay-btn">Pay</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
